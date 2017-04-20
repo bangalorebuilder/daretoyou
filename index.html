@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>Dare For You</title>
+    <style type="text/css">
+      #changeText
+      {
+        font-size: 30px;
+        height: 250px;
+      }
+
+      h1{
+        font-size: 60px;
+        color: #324658;
+        background-color: aliceblue;
+      }
+      
+      body
+      {
+        background-color: aliceblue;
+      }
+
+      .maindiv
+      {
+        display: flex;
+        flex-wrap: wrap;
+        height: 400px;
+      }
+
+      #sidebarright
+      {
+        width: 30%;
+      }
+
+      .container
+      {
+        width: 40%;
+      }
+    </style>
+</head>
+<body>
+  <div class="maindiv">
+    <div id="sidebarright">
+    </div>
+    <div class="container" style="text-align:center;">
+      <h1>Your Dare is</h1>
+      <div id="changeText" ></div>
+      <div>
+   
+      </div>
+      <h2>Take Screenshot</h2>
+      <div id="sidebarright">
+      </div>
+      <div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      var text = ["Love anytime I say!","Take a selfie of yours post to me","Call me and kiss me","Call me whenever i say","Ride me over Night","Make me Laugh by  Calling me Babu in every sentence","Deep love giving at alone place to me"];
+      var counter = 0;
+      var elem = document.getElementById("changeText");
+      setInterval(change, 1);
+      function change() {
+          elem.innerHTML = text[counter];
+          counter++;
+          if(counter >= text.length) { counter = 0; }
+      }
+    </script>
+</body>
+</html>
